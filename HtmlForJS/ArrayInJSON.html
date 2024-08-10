@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+let student={
+"name":"anil",
+"contact":974748833,
+"marks":[76,78,67,76,76]
+
+}
+
+
+function add()
+{
+document.getElementById("one").innerHTML=student.name;
+document.getElementById("two").innerHTML=student.contact;
+div=document.getElementById("three");
+studMarks=student.marks;
+
+var ol=document.createElement("ol");
+
+
+for(let i=0;i<studMarks.length;i++)
+{
+let li=document.createElement("li");
+li.innerHTML=studMarks[i];
+ol.appendChild(li);
+}
+
+div.appendChild(ol);
+
+}
+
+
+
+</script>
+
+
+</head>
+<body>
+ 
+   
+    <button type="submit" id="b" name="jsonValue" onclick="add()">BUTTON</button>
+        <h1 id="one">   </h1>
+  
+
+        <h1 id="two">   </h1>
+
+        <div id="three">
+
+        </div>
+
+</body>
+</html>

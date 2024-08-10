@@ -1,0 +1,19 @@
+
+
+.menuImage {
+width: 200px;
+height: 100px;
+background-image: url(images/Application\ Manager.jpeg);
+
+}
+
+.menu ul li a{
+
+
+padding-left: 50px;
+color: blueviolet;
+text-decoration: none;
+}
+a{
+    text-decoration: none;
+}

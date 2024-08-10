@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+/* .main{
+    width: 700px;
+    height: 400px;
+    background: linear-gradient(#2727,#2992,#883);
+} */
+
+    #head{
+        color: chocolate;
+
+    }
+    #table{
+        border-style: groove;
+        color: blueviolet;
+        width: 500px;
+    height: 400px;
+    background: linear-gradient(#2727,rgba(168, 180, 180, 0.133),#883);
+        
+    }
+   #table tr td{  
+    padding: 5px;
+   }
+  #p{
+    color: darkred;
+  }
+  #r{
+    color: brown;
+  }
+
+#bt1{
+    margin-top: 10px;
+    background-color: aquamarine;
+}
+</style>
+
+<script type="text/javascript">
+    function total(){
+var sum=parseInt(document.getElementById('java').value) +parseInt(document.getElementById('css').value)+parseInt(document.getElementById('html').value)+
+parseInt(document.getElementById('sql').value)+parseInt(document.getElementById('javascript').value) ;
+
+var grade=sum/5;
+document.getElementById('total').value=grade
+
+    
+
+   
+if(grade>90)
+{
+document.getElementById('result').value='Distinction'
+
+}
+
+else if(grade>75&&grade<90)
+{
+document.getElementById('result').value='Grade A'
+}
+
+else if(grade>55&&grade<75)
+{
+document.getElementById('result').value='Grade B'
+}
+
+else if(grade>35&&grade<55)
+{
+document.getElementById('result').value='Grade C'
+}
+
+else if(grade<35)
+{
+document.getElementById('result').value='Failed !'
+
+
+}
+
+    }
+
+   
+    
+</script>
+
+
+
+</head>
+<body>
+    <div class="main">
+    <table id="table">
+        <tr id="head">
+            <th> Subject Name</th>
+            <th>Marks</th>            
+        </tr>
+        <tr>
+            <td>Java: </td>
+            <td><input type="text" id="java" placeholder="enter java marks"></td>
+           
+        </tr>
+        <tr>
+            <td>CSS: </td>
+            <td><input type="text"  id="css" placeholder="Enter CSS marks"></td>
+           
+        </tr>
+
+        <tr>
+            <td>HTML: </td>
+            <td><input type="text" id="html" placeholder="Enter HTML marks"></td>
+        </tr>
+
+        <tr>
+            <td>JavaScript: </td>
+            <td><input type="text" id="javascript" placeholder="Enter javaScript marks"></td>
+        </tr>
+
+        <tr>
+            <td>SQL: </td>
+            <td><input type="text" id="sql" placeholder="Enter SQL maeks"></td>
+        </tr>
+
+        <tr>
+            <td id="p">Percentage: </td>
+        <td><input type="text" id="total"></td>
+    </tr>
+
+    <tr>
+        <td id="r">Result: </td>
+        <td><input type="text" id="result"></td>
+    </tr>
+
+    <tr>
+        <td></td>
+       <td> <button type="submit" id="bt1" onclick="total()">Submit</button></td>
+    </tr>
+    </table>
+    </div>
+
+    <script type="text/javascript">
+const btnperform=document.querySelector('#btnOperation');
+const txtfirst=document.querySelector('#n1');
+const txtsecond=document.querySelector('#n2');
+
+
+    </script>
+
+</body>
+</html>

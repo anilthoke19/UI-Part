@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+*{
+    padding: 0%;
+    margin: 0%auto;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 90%;
+  
+    background-color: aqua;
+}
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 60px 100px 40px 100px 150px;
+    row-gap: 5px ;
+}
+.head{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.navigation{
+grid-column-start: 1;
+grid-column-end: 4;
+}
+.nav{
+    display: inline;   
+}
+a{
+    padding: 7px;
+}
+
+.content{
+grid-column-start: 1;
+grid-column-end: 3;
+background-color: brown;
+}
+
+.side{
+    grid-column-start: 3;
+grid-column-end: 4;
+background-color: beige;
+
+}
+    </Style>
+</head>
+<body class="main">
+
+    <section class="container">
+<div class="head">
+    <h2>heading</h2>
+</div>
+
+<div class="navigation">
+<nav>
+    <a href="#">HOME</a>
+    <a href="#">CONTACT</a>
+    <a href="#"> COURSES</a>
+    <a href="#"> ABOUT US</a>
+    <a href="#">VISION</a>
+</nav>
+</div>
+
+<div class="content">
+    CONTENT AREA
+</div>
+
+
+<div class="side">SIDE BAR</div>
+<div>5</div>
+
+<div>
+<h2>Footer Area</h2>
+</div>
+
+
+    </section>
+    
+    
+</body>
+</html>

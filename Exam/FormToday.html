@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javaScript">
+
+	function nameValid(str)
+	{
+       let pattern= /^[a-zA-Z\s]+$/g;
+       let result=pattern.test(str);
+       if(result)
+		{
+			document.getElementById("a").innerHTML="";
+		}
+		else{
+			 document.getElementById("a").innerHTML="invalid name";
+			// document.getElementById("a").style.color="red";
+            //alert("Invalid Name ");
+
+        }	
+	}
+	function emailValid(str)
+	{
+		let pattern=/^[a-z]{1}[a-z0-9._-]+@[a-z]+\.[a-z]{2,3}$/g;
+ 		let result=str.match(pattern);
+ 		if(result)
+ 		{ 
+			document.getElementById("e").innerHTML="";
+ 		}
+		else{
+			  document.getElementById("e").innerHTML="invalid email address";
+			// document.getElementById("e").innerHTML.style.color="red";
+      // alert("Invalid Email");
+        }
+	}
+	function phoneValid(str)
+	{
+		 let pattern= /^[6-9]{1}[0-9]{9}$/;
+         let result=pattern.test(str);
+         if(result)
+         {
+           document.getElementById("p").innerHTML="";
+          }
+         else{
+          document.getElementById("p").innerHTML="invalid contact";
+        //  document.getElementById("p").style.color="red";
+        
+        //alert("Invalid phone Number");
+
+        }	
+	}
+
+
+</script>
+
+
+
+<style type="text/css">
+
+#navBar ul li 
+{
+    display: inline;
+}
+
+#navBar ul li a 
+{
+    padding-top: 10px;;
+   text-decoration: none;
+   padding:8px;
+   font-weight: bolder;
+   color:brown;
+}
+
+#head 
+{
+
+background-image: url("https://img.freepik.com/premium-photo/photovoltaic-modules-solar-power-plant-green-tree-landscape-lake-views-nature-forest-mountain-views-spring-with-white-cloud-background_29332-2353.jpg?w=826");
+}
+
+#cont
+{
+    color: brown;
+    text-align: center;
+}
+
+#feed
+{
+margin-top: 10px;;
+    padding-top: 25px;
+}
+
+
+#f{
+    border: 2px solid black;
+}
+.formi label
+{
+padding-left: 20px;
+padding: 15px;  
+}
+
+.formi input{
+    border-radius: 10px;
+    background-color: rgb(179, 195, 190);
+}
+#text
+{
+    padding-left: 60px;;
+}
+
+#map
+{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tiNOO4g8aA0JWZgzNiVFgXXBuoEzQBHdxQ&s");
+}
+
+#q
+{
+border: 2px solid black;
+border-radius: 100px;
+
+}
+#t
+{
+    text-decoration: none;
+    margin-left: 60px;
+    color: palevioletred;
+}
+
+#maptext
+{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#b
+{
+    width: 500px;
+    border-radius: 10px;
+    margin-left: 30px;
+    background-color: rgb(194, 158, 146);
+    margin-bottom: 5px;;
+}
+
+#footer
+{
+  text-align: center;  
+  margin-top: 10px;
+}
+#footer ul li 
+{
+display: inline;
+padding: 10px;
+
+}
+</style>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+
+</head>
+<body>
+    
+    <div class="Container">
+<div class="row" id="head">
+
+        <div class="row" id="navBar">
+
+<div class="col-4" >
+    <a href="" id="t"> <i class="fa fa-snowflake-o fa-2x" aria-hidden="true"></i>
+        TANGO</a>
+</div>
+
+<div class="col-8">
+            <ul>
+                <!-- <li><a href="">tango</a></li> -->
+                <li><a href="" >Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Project</a></li>
+                <li><a href="">Cotact us</a></li>
+                <li><a href="">pages</a></li>
+                <li id="q"><a href="">Get a Quote</a></li>
+
+            </ul>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="row" id="cont">
+
+<h1>Contact US</h1>
+
+<h3>Mauris eget consectetur nibh ex quam mum cras</h3>
+
+    </div>
+
+</div>
+
+<div class="row " id="feed">
+
+<div class="col-5" id="text">
+
+    <h3>GET IN TOUCH </h3> 
+
+    <h1>Have a question or feedback ?</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam laboriosam iste id esse aspernatur voluptatum nemo doloribus tempore quaerat doloremque.</p>
+
+
+</div>
+
+<div class="col-6">
+
+<div class="formi">
+<form id="f">
+
+    <label for="name">Name</label>
+    <input type="text" name="name" value=""  onkeyup="nameValid(this.value)">
+    &nbsp; <span id="a"> </span>
+    
+
+    <label for="comp">Company</label>
+    <input type="text" name="comp"><br>
+   
+    <label for="Email">Email</label>
+    <input type="text" name="Email" value="" onkeyup="emailValid(this.value)"> &nbsp;<span id="e"> </span>
+
+    <label for="phon">Phone</label>
+    <input type="text" name="phon" value="" onkeyup="phoneValid(this.value)">
+    &nbsp;<span id="p"> </span>
+    <br>
+
+    <label for="subject">Subject</label>
+    <input type="text" name="name"><br>
+
+    <label for="massage">Massage</label>
+    <input type="text" name="massage"><br>
+
+    <button type="submit" id="b">Submit</button>
+  
+</form>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="row" id="maptext">
+
+<div class="col-6" id="map">
+
+</div>
+
+<div class="col-6" style="background-color: rgb(155, 209, 191);">
+
+    <p>Location </p>
+
+    <h1>We're Here to help</h1>
+    Lorem ipsum dolor sit amet.
+
+    <p> <i></i> Dangat park ,warje malwadi Pune </p>
+    <p> <i></i>Giri'sTechub12@gamil.com</p>
+    <p> <i></i> +23321323231</p>
+
+
+
+</div>
+
+</div>
+
+
+<div class="row" id="footer">
+<h3>Follow our official social network </h3>
+
+<ul>
+<li> <a href=""><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li></a>
+<li><a><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></li></a>
+<li><a><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li></a>
+<li><a><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></li></a>
+
+
+</ul>
+
+
+</div>
+
+
+
+<div class="row">
+
+    <div class="col-3">
+<h3>Tango</h3>
+<h4>Tango Energy</h4>
+
+    </div>
+
+    <div class="col-3">
+
+        <ul>
+            company
+            <li> <a href="">About us</a></li>
+            <li> <a href="">contact us</a></li>
+            <li> <a href="">legee notice</a></li>
+            <li> <a href=>Partener</a></li>
+
+        </ul>
+        
+    </div>
+
+    <div class="col-3">
+        <ul>
+            Support
+            <li> <a href="">Help us</a></li>
+            <li> <a href=""> Ticket</a></li>
+            <li> <a href="">More</a></li>
+            <li> <a href=>Partener</a></li>
+
+        </ul>
+        
+    </div>
+
+    <div class="col-3">
+
+        
+    </div>
+
+
+
+</div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

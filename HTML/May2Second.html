@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+let a=()=>{
+ let value=document.getElementById("one").value;
+document.write(value);
+
+
+}
+
+function createH()
+{
+    
+let d=document.getElementById("head");
+
+let c=document.createElement("form");
+
+c.setAttribute("name","frm");
+c.setAttribute("action","ps");
+c.setAttribute("method","GET")
+
+
+var textBox=document.createElement("input");
+  textBox.setAttribute("type","text");
+  textBox.setAttribute("name","name");
+  textBox.setAttribute("value","ABC");
+  c.appendChild(textBox);
+
+ 
+  d.appendChild(c)
+
+
+
+
+
+
+}
+
+</script>
+    
+<style>
+nav a
+{
+padding-left: 40px;
+text-decoration: none;
+}
+
+</style>
+
+</head>
+<body>
+
+    <input type="text" id="one" placeholder="Enter name" value="" >
+    <input type="button" value="Enterr" onclick="a()" />
+    <input type="button" value="CreateHeading" onclick="createH()" />
+
+    <div id="head"></div>
+
+    <div>
+<details>
+<summary>About us</summary>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, porro laudantium eos saepe ex corporis? Repellat quia temporibus fugit, quaerat molestias debitis ullam laborum iste libero et non aliquid. Molestias modi incidunt beatae minima dicta ullam, eum ex id nisi? Mollitia quis perspiciatis harum libero officia dolorum voluptatem, ut recusandae in. Perferendis repellendus ab aperiam praesentium incidunt, necessitatibus quod ea?</p>
+</details>
+
+    </div>
+
+
+
+    <center>
+<nav > 
+  <a href="">Home</a>
+  <a href="">About</a>
+  <a href="">Contact us</a>
+  <a href="">Services </a>
+  <a href="">Home</a>
+  <a href="">About</a>
+  <a href="">Contact us</a>
+  <a href="">Services </a>
+  <a href="">Home</a>
+  <a href="">About</a>
+  <a href="">Contact us</a>
+  <a href="">Services </a>
+</nav>
+
+</center>
+
+   
+</body>
+</html>

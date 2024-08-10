@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+ <title>promise</title>
+
+<script type='text/javascript' na>
+
+	function CompareString(str1,str2)
+	{
+		this.str1=str1;
+		this.str2=str2;
+		 let pro = new Promise(function(resolve,reject)
+    {
+	if(str1==str2)
+	{ 
+	  resolve();
+	}
+	else
+	{ reject();
+	}
+   });
+   return pro;
+	}
+	
+   var res=CompareString("valid2","valid");
+    res.then(function(){
+	document.write("Promise get success");
+   });
+   res.catch(function(){
+	document.write("Promise  get failed");
+   });
+</script>
+</head>
+<body>
+</body>
+</html>

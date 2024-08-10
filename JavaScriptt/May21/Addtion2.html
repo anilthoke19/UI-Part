@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+function ad()
+{
+var a=parseInt(document.getElementById("one").value);
+var b=parseInt(document.getElementById("two").value);
+var c =a+b;
+
+var n=document.createElement("h1");
+n.innerHTML=c;
+document.getElementById("sum").appendChild(n);
+
+
+
+
+}
+</script>
+
+</head>
+<body>
+   
+    <input type="text" id="one" placeholder="Enter 1 number"></body><br>
+    <input type="text" id="two" placeholder="Enter 1 number"><br>
+
+    <Button onclick="ad()"> BUTTON </Button>
+
+<div id="sum">
+
+</div>
+</body>
+</html>

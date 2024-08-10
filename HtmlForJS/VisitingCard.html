@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+          
+            box-sizing: border-box;
+        }
+#head{
+text-align: center;
+
+}
+        .content{
+            border: 2px solid black;
+height: 450px;
+        }
+        .main{
+            padding: 10px;
+            display: flex;
+            
+           
+          
+        }
+        .input{
+            border: 2px solid black;
+            height: 300px;
+            width: 45%;
+            display: block;
+           
+        }
+.input table tr td{
+padding-top: 25px;
+color: rgb(255, 0, 149);
+}
+
+
+        .output{
+            border: 2px solid black;
+            height: 300px;
+            width: 45%;
+           margin-left: 20px;
+          
+            
+        }
+        .dropD{
+height: 50px;
+margin-left: 60px; 
+margin-top: 30px;
+        }
+        .dropD button{
+            width: 110px;
+            margin-left: 60px;
+            color: rgb(64, 118, 166);
+            background-color: bisque;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="content">
+<h2 id="head">Visiting card Appliaction</h2>
+<div>
+
+</div>
+
+<div class="main">
+
+<div class="input" id="input2">
+<table>
+<tr>
+<td><label for="name">Enter name</label></td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+    <td><label for="Username">Enter email</label></td>
+    <td><input type="text"></td>
+    </tr>
+
+    <tr>
+        <td><label for="">Designation</label></td>
+        <td><input type="text"></td>
+    </tr>
+
+  
+
+    <tr>
+        <td><label for="">Date of issue</label></td>
+        <td><input type="text"></td>
+    </tr>
+
+</table>
+
+</div>
+
+<div class="output">
+
+    <p id="nameO">
+
+    </p>
+
+    <p id="emailO">
+
+    </p>
+
+    <p id="DesO">
+
+    </p>
+
+    <p id="dateO">
+
+    </p>
+
+
+
+</div>
+
+</div>
+
+
+
+<div class="dropD" onclick="input()">
+    <button type="submit">Get Data</button>
+<button type="submit">Color</button>
+<button type="submit">Font style</button>
+<button type="submit">Font Style</button>
+<button type="submit">Print</button>
+
+</div>
+
+</div>
+
+    <script>
+
+function input()
+{
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var Des=document.getElementById("des").value;
+var date=document.getElementById("date").value;
+
+
+document.getElementById("nameO").innerHTML=name;
+document.getElementById("emailO").innerHTML=email;
+document.getElementById("desO").innerHTML=Des;
+document.getElementById("dateO").innerHTML=date;
+
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript">
+
+var a=new Array();
+a.push(10);
+a.push(270);
+a.push(30);
+a.push(40);
+
+
+
+for(let i=0;i<a.length;i++)
+{
+    document.write(a[i]+" ")
+}
+
+let b=a.join("*")
+
+document.write("<br>"+b)
+
+a.shift();
+document.write("<br>"+a)
+
+a.unshift(100);
+document.write("<br>"+a)
+
+a.reverse()
+document.write("<br>"+a)
+
+let c=[100,200,300,400]
+let d=b.concat(" "+c);
+document.write("<br>"+d)
+
+let h=a.map((value)=>value*5)
+document.write("<br>"+h)
+
+function add(a,b){
+let result=a+b;
+return result
+
+}
+
+let v=add(10,20)
+document.write("<br>  <h3> Addition is "+v+"</h3>")
+
+let count=0;
+function rec()
+{
+if(count!=5)
+{
+    document.write("Good morning India<br>")
+    count++;
+    rec();
+}
+}
+rec();
+
+</script>
+
+</head>
+<body>
+    <div class="main">
+
+         <div class="menu">
+         <a href="#">Home</a>
+         <a href="#">About Us</a>
+         <a href="#">Contat Us</a>
+         <a href="#">Help</a>
+         <a href="#">Exit</a>
+
+         </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+.container{
+background-color: aliceblue;
+
+}
+#head{
+    text-align: center;
+    color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: blanchedalmond;
+    margin-top: 8px;
+}
+#head h2{
+ font-size: xx-large;
+ font-weight: bolder;
+ 
+}
+#menu{
+background-color: rgb(169, 136, 136);
+margin-top: 10px;
+
+}
+#menu ul li {
+    list-style-type: none;
+    padding-right: 30px;
+    margin-left: 10px;
+  
+display: inline;
+}
+#menu ul li a{
+    text-decoration: none;
+    padding-left: 60px;
+    color: yellow;
+    font-weight: bolder;
+    font-size: larger;
+    
+}
+#menu ul li a:hover {
+    color: blue;
+    background-color: rgb(223, 79, 163);
+}
+
+#cardd{
+    margin-top: 8px;
+}
+#imgP1{
+   
+
+    background-color: bisque;}
+#imgP2{
+   
+    background-color: bisque;
+}
+#imgP3{
+
+    background-color: bisque;}
+img{
+    width: 355px;
+    height: 200px;
+}
+
+#content{
+    margin-top: 8px;
+    padding-top: 10px;
+    background-color: lightyellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: justify;
+}
+
+#content h2{
+    text-align: center;
+    color: rgb(110, 26, 212);
+}
+
+#content1{
+    margin-left: 10px;
+    color: crimson;
+   border-style: groove;
+   border-color: black;
+}
+
+#content2{
+    margin-left: 10px;
+    color: crimson;
+
+    border-style: groove;
+    border-color: black;
+
+ }

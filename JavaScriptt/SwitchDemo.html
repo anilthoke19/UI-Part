@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript">
+
+
+
+function clearTextField()
+{
+document.getElementById('n1').value="";
+document.getElementById('n2').value="";
+document.getElementById('res').value="";
+document.getElementById('gk').value='select';
+document.getElementById('n1').focus();
+
+
+}
+function checkEnabledDisabled()
+{
+const btnperform =document.querySelector('#btnOperation');
+const txtfirst = document.querySelector('#n1');
+btnperform.disabled = true;
+txtfirst.focus();
+}
+
+
+function doTask()
+{
+    checkEmptyFields()
+var n1=parseInt(document.getElementById('n1').value);
+var n2=parseInt(document.getElementById('n2').value);
+
+var choice=document.getElementById('gk').value
+
+switch(choice)
+{
+case '+':
+    var n3=n1+n2;
+    document.getElementById('res').value=n3;
+    break;
+
+    case '-':
+        var n3=n1-n2;
+        document.getElementById('res').value=n3
+        break;
+
+        case '*': 
+        var n3=n1*n2;
+        document.getElementById('res').value=n3;
+        break;
+
+        case '/': 
+        var n3=n1/n2;
+        document.getElementById('res')=n3;
+        break;
+
+        default: 
+        alert("Invalid operation");
+        n1.focus();
+}
+}
+
+function checkEmptyFields()
+{
+
+    if(document.getElementById('n1').value =="")
+    {
+        alert('enter the first number')
+        document.getElementById('n1').focus();
+    }
+    else if(document.getElementById('n2').value=="")
+    {
+alert('enter second number')
+document.getElementByid('n2').focus();
+document.getElementbyId('n2').style.backgroundColor='red'
+    }
+    else if(document.getElementById('gk').value=="select")
+    {
+        alert("enter select at least one operation");
+        document.getElementById('gk').focus();
+    }
+}
+
+
+
+
+
+    </script>
+    <title>Document</title>
+</head>
+<body onload="checkEnabledDisabled()">
+    <table>
+        <tr>
+            <td>  <label for="n1">Enter first number</label></td>
+            <td> <input type="text" id="n1" name="n1"></td>
+        </tr>
+
+        <tr>
+            <td><label for="n2"> Enter second number</label></td>
+            <td><input type="text" id="n2" name="n2"></td>
+        </tr>
+
+        <tr>
+            <td><label for="op">Enter any operation</label></td>
+            <td>
+        <select id="gk">  
+    <option value="select">select</option>
+    <option value="+">Addition</option>
+    <option value="-">Substraction</option>
+    <option value="*">Multipliacation</option>
+    <option value="/">Division</option>
+</select>
+            </td>
+
+        </tr>
+
+        <tr>
+           <td> <label for="res" >Result</label></td>
+           <td> <input type="text" id="res" readonly></td>
+        </tr>
+
+        <tr>
+            <td>
+                <button id="btnOperation" onclick="doTask()">Perform task</button>
+            </td>
+            <td>
+                <button id="btnClear" onclick="clearTextField()">Clear all</button>
+            </td>
+        </tr>
+        
+    </table>
+
+<script type="text/javascript">
+   
+const btnperform=document.querySelector('#btnOperation');
+const textfirst=document.querySelector('#n1');
+
+textfirst.addEventListener("keyup",function()
+{
+    if(textfirst.value.length<0)
+    {
+        btnperform.disabled=true;
+    }
+    else{
+        btnperform.disabled=false;
+    }
+}
+
+);
+    
+
+
+
+</script>
+
+</body>
+</html>

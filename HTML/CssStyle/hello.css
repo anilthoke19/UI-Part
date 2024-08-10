@@ -1,0 +1,85 @@
+.container{
+   
+    background-color: rgb(124, 177, 224);
+
+}
+#head{
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(180, 203, 203);
+    color: rgb(207, 13, 142);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#menu{
+    margin-top: 10px;
+    background-color: lightgoldenrodyellow;
+}
+#menu li
+{
+    display: inline;
+    list-style-type: none;
+    
+}
+#menu li a{
+    text-decoration: none;
+    padding-right: 80px;
+    padding-left: 40px;
+    font-weight: bold;
+    color: crimson;
+   
+    
+}
+iimage{
+    background-color: lightcyan;
+} 
+#imgmain{
+   
+    overflow: hidden;
+}
+img{
+    border-radius: 15px;
+}
+#img3
+{
+    padding-bottom: 7px;
+    margin-bottom: 5px;
+}
+#menu li a:hover{
+    color: blueviolet;
+}
+
+#slide{
+    margin-top: 10px;
+    background-color: lightskyblue;
+    
+}
+
+
+
+#content2{
+    margin-left: 5px;
+background-color: lightgoldenrodyellow;
+color: darkorange;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.formm input{
+ height: 20px;   
+}
+
+
+#login1{
+    margin-left: 10px;
+    border-style: double;
+    color: brown;
+}
+#login2{
+    margin-left: 10px;
+    border-style: double;
+    color: rgb(170, 16, 88);
+}
+    #footer{
+        margin-top: 10px;
+        background-color:  rgb(161, 200, 200);
+        text-align: center;
+        color: rgb(115, 90, 214);
+    }

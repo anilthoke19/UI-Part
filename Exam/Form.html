@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>examtest</title>
+<style>
+	.form{
+		width: 400px;
+		height: 500px;
+		border: 1px solid black;
+		text-align: center;
+		margin-top: 70px;
+		margin-left: 440px;
+		background-color: rgb(145, 44, 204);
+	}
+	input
+	{   
+		width: 280px;
+		height: 40px;
+		margin-top: 20px;
+	}
+	#submit
+	{
+		width: 80px;
+		height: 30px;
+		background-color: lightgreen;
+	}
+</style>
+<script type="text/javaScript">
+	function nameValidation(str)
+	{
+       let pattern= /^[a-zA-Z\s]+$/g;
+       let result=pattern.test(str);
+       if(result)
+		{
+			document.getElementById("a").innerHTML="";
+		}
+		else{
+			document.getElementById("a").innerHTML="invalid name";
+			document.getElementById("a").style.color="red";
+			}	
+	}
+	function emailValidation(str)
+	{
+		let pattern=/^[a-z]{1}[a-z0-9._-]+@[a-z]+\.[a-z]{2,3}$/g;
+ 		let result=str.match(pattern);
+ 		if(result)
+ 		{ 
+			document.getElementById("q").innerHTML="";
+ 		}
+		else{
+			 document.getElementById("q").innerHTML="invalid email address";
+			document.getElementById("q").innerHTML.style.color="red";
+			}
+	}
+	function contactValidation(str)
+	{
+		 let pattern= /^[6-9]{1}[0-9]{9}$/;
+         let result=pattern.test(str);
+         if(result)
+         {
+           document.getElementById("r").innerHTML="";
+          }
+         else{
+         document.getElementById("r").innerHTML="invalid contact";
+         document.getElementById("r").style.color="red";
+         }	
+	}
+	function userValidation(str)
+	{
+       let pattern= /^[a-zA-Z0-9]+$/g;
+       let result=pattern.test(str);
+	   if(result )
+	   {
+		document.getElementById("s").innerHTML="";
+		}
+		else{
+		document.getElementById("s").innerHTML="invalid username";
+		document.getElementById("s").style.color="red";
+		}
+    }
+  function passValidation(str)
+	{
+       let pattern= /^[a-zA-Z0-9@#$%&*!]{8,}$/g;
+       let result=pattern.test(str);
+      
+		if(result)
+		{
+		document.getElementById("t").innerHTML="";
+		}
+		else{
+			document.getElementById("t").innerHTML="invalid password";
+			document.getElementById("t").style.color="red";
+			}
+		}		
+	
+</script>
+</head>
+
+<body>
+   <div class="form">
+	   <center>
+	   <input type="text" name="name" value="" placeholder="Name" onkeyup="nameValidation(this.value)">
+	   <p id="a"></p>
+	   <input type="email" name="email" value="" placeholder="Email" onkeyup="emailValidation(this.value)">
+       <p id="q"></p>
+       <input type="text" name="contact" value="" placeholder="Contact" onkeyup="contactValidation(this.value)">
+       <p id="r"></p>
+       <input type="text" name="user" value="" placeholder="username" onkeyup="userValidation(this.value)">
+       <p id="s"></p>
+       <input type="text" name="name" value="" placeholder="password"onkeyup="passValidation(this.value)"><br>
+       <p id="t"></p>
+       <input type="submit" name="s" value="Submit" id="submit">
+
+	   </center> 
+   </div>
+</body>
+</html>

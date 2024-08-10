@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script src="C:\Anil\JScode\PageByGrid.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+*
+{
+    box-sizing: border-box;
+    margin: 0%;
+    padding-bottom: 10px;
+}
+#heading
+{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input
+{
+    margin-top: 18px;
+}
+
+#first   /* id for grid */
+{
+border: solid 2px black;
+height: 300px;
+   
+    color: brown;
+
+}
+
+#register
+{
+    background-color: antiquewhite;
+
+}
+#info
+{
+    background-color: aqua;
+}
+
+#login
+{
+   
+    background-color: rgb(105, 105, 116);
+}
+
+.one{
+    width: 90%;
+   position: relative;
+height: 200px;
+background-color: black;
+right: 2%;
+
+}
+.one img{
+    width: 100%;
+    height: 200px;
+}
+.two{
+   width: 90%;
+  position: relative;
+height: 200px;
+background-color: brown;
+left: 12%;
+}
+.two img{
+    width: 100%;
+    height: 200px;
+}
+.inner
+{
+    position: absolute;
+    width: 50%;
+height: 100px;
+background-color: chartreuse;
+background-image: linear-gradient(#9282,#772,#928);
+right: 100px;
+top: 60px;
+border-radius: 20px;
+padding: 6px;
+
+}
+
+
+#sec
+{
+    margin-top: 12px;
+    margin-bottom: 50px;
+}
+
+#info
+{
+    border: solid 2px black;
+}
+
+    </style>
+    
+</head>
+
+<body>
+<div class="container">
+
+    <div class= "row"  id="heading">
+<h1> CREAZIONE SOFTWARE</h1>
+
+    </div>
+
+<div class="row" id="first">
+
+    <div class="col-4" id="register">
+<table>
+    <tr>Register Here</tr>
+<tr>
+    <td> <label for="">Enter name</label>  </td>
+    <td><input type="text" id="ruser"></td>
+</tr>
+
+<tr>
+    <td><label for="">Enter email </label></td>
+    <td><input type="email" id="remail"></td>
+</tr>
+
+<tr>
+    <td><label for="">Enter password</label></td>
+    <td><input type="password" id="rpass"></td>
+</tr>
+
+</table>
+      
+
+
+    </div>
+
+    <div class="col-4" id="info">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, perspiciatis.</p>
+    </div>
+
+    <div class="col-4" id="login">
+
+<table>
+    <tr>Login Here</tr>
+
+<tr>
+<td><label for="">Enter username</label> </td>
+<td><input type="text" id="luser"></td>
+</tr>
+<tr>
+    <td><label for="">Enter password </label></td>
+    <td><input type="password" id="lpass"></td>
+</tr>
+
+<tr>
+    <td><button type="submit" onclick="login()">Login</button></td>
+</tr>
+
+</table>
+
+    </div>
+
+</div>
+
+
+<div class="row" id="sec">
+
+    <div class="col-6">
+<div class="one">
+    <img src="C:\Users\91913\Downloads\book2.jpg" alt="">
+<h5>Best Teaching Staff</h5>
+</div>
+</div>
+
+<div class="col-6">
+<div class="two">
+    <img src="C:\Users\91913\Downloads\8314929977_4d7e817d68_h.jpg" alt="image is here">
+
+    <div class="inner">
+<h4 style="color: rgb(0, 34, 255) ; font-weight: bold;"> We provide unlimited book for study!</h4>
+
+    </div>
+    <h5>Library</h5>
+
+</div>
+</div>
+
+
+</div>
+
+<div class="row">
+<div class="col-8"></div>
+
+</div>
+
+<div class="col-4" id="info">
+<h3>User Information</h3>
+<table>
+    <tr><td > Name</td> 
+        <td> <p  id="n" for="Name"> </p></td> </tr>
+
+    <tr> <td>  Email</td>
+        <!-- <label for="email" id="e"></label> -->
+        <td><p id="e" for="Email"> </p> </td>
+    </tr>  
+
+</table>
+
+</div>
+
+
+</div>
+
+<div class="row">
+    <div class="col-9">
+    
+        <p id="check"> </p>
+    
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ 
+</body>
+</html>

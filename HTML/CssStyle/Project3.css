@@ -1,0 +1,133 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%auto;
+  
+}
+
+
+#header{
+    margin-bottom: 15px;
+    background-color: #FFF6F6;
+   
+}
+#head h1{
+    width: 150px;
+    border-style: ridge;
+    padding-bottom: 8px;
+    
+}
+#the,#first,#second,#slide1,#slide2,#slide3,#blog,#news,#footer{
+border-style: ridge;
+border-width: 5px;
+border-color: black;
+}
+#the{
+    margin-bottom: 15px;
+    height: 300px;
+padding-left: 0%;
+}
+.mainContent{
+    padding-top: 110px;
+    text-align: center;
+}
+.title{
+    margin-left: 78px;
+}
+
+#img1{
+    display: flex;
+    float: left;
+    padding-right: 30px;
+    padding-left: 0%;
+    background-color: #164863;
+    color: white;
+    
+}
+#img1 img{
+    width: 700px;
+    height: 291px;
+}
+#img2 img{
+    width: 700px;
+    height: 291px;
+}
+
+.listmain ul li{
+    display: inline;
+}
+.listmain ul li a{
+    padding-left: 10px;
+    text-decoration: none;
+   
+}
+
+#shopPlan{
+/* margin-top: 10px; */
+margin-bottom: 15px;
+}
+#first ,#second{
+   text-align: center; 
+   height: 200px;
+ width: 565px;
+  
+}
+#first{
+    background-color: #CE5A67;
+    padding-left: 0%;
+    display: flex;
+float: left;
+
+}
+#first img{
+    height: 190px;
+    width: 350px;
+}
+#second{
+    background-color: #6A9C89;
+    padding-left: 0%;
+    display: flex;
+    float: left;   
+  margin-left: 8px;
+}
+
+#second img{
+    height: 190px;
+    width: 350px;
+}
+#second,#slide1,#slide2,#slide3
+{
+    padding-bottom: 15px;
+}
+
+.content1 ,.content2
+{
+   color: white;
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 15px;
+}
+
+#slider{
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+
+#blog{
+    background-color: #0F0F0F;
+    margin-bottom: 15px;
+
+text-align: center;
+}
+#news{
+    background-color: #FFF6F6;
+    margin-bottom: 15px;
+    height: 150px;
+
+}

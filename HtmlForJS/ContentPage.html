@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    *{
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+      
+    }
+    .main{
+        display: grid;
+grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 60px 100px 40px 100px 150px;
+    grid-gap: 5px;
+
+    }
+
+.header{
+    grid-column-start:1;
+    grid-column-end: 4;
+
+}
+
+.menu
+{
+    grid-column-start:1;
+    grid-column-end:4;
+
+}
+
+.containt
+{
+    grid-column-start:1;
+    grid-column-end: 3;
+
+}
+
+.sidebar
+{
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+
+.album{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+.footer
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+</style>
+
+</head>
+<body>
+        
+    <div class="main">
+
+<div>
+    <h2 class="heading">Welcome To Site</h2>
+</div>
+
+        <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contat Us</a>
+        <a href="#">Help</a>
+        <a href="#">Exit</a>
+
+        </div>
+
+
+<div class="containt">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate qui quia dolorum, veniam eligendi blanditiis quo dolor dolore cumque repellat rerum ipsam maxime sequi, illo hic quos explicabo impedit esse?</p>
+
+</div>
+
+<div class="sidebar">
+<table>
+    <tr>
+        <td><label for="#">Enter first number</label></td>
+        <td> <input type="text"></td>
+    </tr>
+    <tr>
+        <td><label for="#">Enter second number</label></td>
+        <td><input type="text" name="" id=""></td>
+    </tr>
+
+    <tr>
+        <td><input type="text">Result</td>
+
+    </tr>
+    <tr>
+        <td><button type="submit">Submit</button></td>
+    </tr>
+   
+
+    <tr>
+        <td>select your option</td>
+        
+      
+        <select name="" id="">
+            <option value="s">Select</option>
+            <option value="+">Addition</option>
+            <option value="-">Substraction</option>
+               </select>
+        
+    </tr>
+</table>
+
+
+</div>
+
+<div class="album">
+<p>album is here</p>
+</div>
+
+<div class="footer">
+<h4>It is footer</h4>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+
+*{
+    margin: 0%auto;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.main{
+/* background-color: antiquewhite; */
+height: 100vh;
+}
+#heading{
+background-color:#445D48;
+color: white;
+padding-bottom: 15px;
+text-shadow: 0px 0px 10px #001524,0px 0px 10px #001524,0px 0px 10px #001524,0px 0px 10px #001524;
+
+
+}
+
+.menu ul li {
+    display: inline;
+
+}
+.menu ul li a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+#input{
+   padding-top: 8px;
+    padding-left:10px;
+    align-items:flex-end;
+}
+#menu1{
+    background-color: #001524;
+
+
+}
+#input button
+{
+    width: 80px;
+}
+
+.passH{
+    background-color:#c1cec3; 
+    padding-bottom: 10px;
+}
+.pass
+{
+    background-color:#c1cec3; 
+    /* padding-top: 10px; */
+  
+    
+    
+}
+.bes{
+    margin-top: 8px;
+    background-color:#c1cec3; 
+    padding-bottom: 5px;
+    border-style:groove;
+    border-radius: 13px;
+
+}
+
+
+
+
+
+.image{
+
+    float: left;
+    margin-bottom: 10px;
+}
+img{
+    width: 250px;;
+    margin-top: 10px;
+    margin-right: 8px;
+ 
+}
+
+
+
+.contentFloat
+{
+    display: flex;
+    float: left;
+    
+}
+
+#widges{
+    margin-top: 20px;
+}
+
+#footer
+{
+    background-color:#445D48;
+
+}
+
+#content2
+{
+    color: white;
+    text-shadow: 0px 0px 10px #001524,0px 0px 10px #001524,0px 0px 10px #001524;
+}
+.menu ul li a:hover{
+    color:red;
+}
+.widges ul li label:hover{
+color: rgb(55, 0, 255);
+}
