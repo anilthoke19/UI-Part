@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+let a={name:"Anil",address:"pune"}
+let {name,address}=a;
+console.log(name+" "+address)
+
+//let {nam,addres}=a;// it will print undefined 
+
+let fun=(...val)=>
+{
+
+//     for(let i=0;i<val.length;i++)
+// {
+//     document.write(val[i]);
+// }
+
+var num=[...val,100,200]
+document.write(num);
+
+}
+
+fun(1,2,4,5,3,5,6);
+
+
+let arr=[2,3,5,4,6,7,8,9];
+
+let val=arr.map(m=>m)
+document.writeln('</br>'+val);
+
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

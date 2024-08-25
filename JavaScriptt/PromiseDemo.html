@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+   let g=new Promise(function (resolve ,reject )
+{ 
+    if(2==2)
+    resolve()
+    {
+        document.writeln("outer response")
+
+//       let j=new Promise(function(res,rej)
+//     {
+//         if(4==4)
+// res()
+// {
+    
+// document.writeln("inner response")
+// }
+// rej()
+// {
+//     document.writeln("inner reject")
+
+// }
+//     })
+    }reject()
+    {
+        document.writeln("outer reject")
+
+    }
+}
+
+).then(
+   
+document.write("then")
+).catch(
+    document.write("catch")
+
+)
+
+
+
+   
+    </script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
